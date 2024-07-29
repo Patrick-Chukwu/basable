@@ -60,6 +60,7 @@ html {
 	.header-buttons {
 		display: flex;
 		justify-content: center;
+		// flex-direction: column;
 		align-items: center;
 		width: 277px;
 		height: 48px;
@@ -119,6 +120,7 @@ html {
 			justify-content: space-between;
 			align-items: center;
 			padding: 8px 16px;
+			border: 1px solid black;
 		}
 
 		.logo {
@@ -140,30 +142,38 @@ html {
 				border-radius: 8px;
 				background: #ffffff;
 				width: 80%;
+				min-height: 100dvh;
 				padding: 1rem 2rem;
 				box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 				flex-direction: column;
-				align-items: center;
+				align-items: flex-start;
 				gap: 16px;
+				border: 1px solid green;
 			}
 		}
 
 		.nav {
 			display: flex;
 			flex-direction: column;
-			align-items: center;
+			align-items: start;
+			justify-content: flex-end;
 			width: 100%;
 			gap: 16px;
+			border:1px solid #0056b3;
+			padding: 2rem .5rem;
 		}
 
 		.header-buttons {
 			display: flex;
-			flex-direction: row;
-			flex-wrap: wrap;
-			justify-content: center;
-			width: 100%;
-			gap: 8px;
+			flex-direction: column;
+			flex-wrap: nowrap;
+			justify-content: flex-end;
+			align-items: start;
+			// width: 100%;
+			gap: 24px;
+			border: 1px solid red;
 			margin-top: 4rem;
+			padding: 2rem ;
 		}
 
 		.hamburger-icon {
